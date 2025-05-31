@@ -1,0 +1,1665 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#bestGaze -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#bestGaze"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#bestLanguage -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#bestLanguage"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#commands -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#commands"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#consciousness -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#consciousness"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#dysarthria -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#dysarthria"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#extinctionAndInattention -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#extinctionAndInattention"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#facialPalsy -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#facialPalsy"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#limbAtaxia -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#limbAtaxia"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#motorArmLeft -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#motorArmLeft"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#motorArmRight -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#motorArmRight"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#motorLegLeft -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#motorLegLeft"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#motorLegRight -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#motorLegRight"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#questions -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#questions"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#sensory -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#sensory"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#timepoint -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#timepoint"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#visual -->
+
+
+    <ObjectProperty rdf:about="http://mre.zcu.cz/ontology/nihss.owl#visual"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestGaze -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestGaze">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestLanguage -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Commands -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Commands">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Consciousness -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Consciousness">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Dysarthria -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Instruction -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Instruction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Interval -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Questions -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Questions">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Sensory -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Sensory">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Visual -->
+
+
+    <Class rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Visual">
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Nothing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#AFTER_02H -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#AFTER_02H">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Interval"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#AFTER_03M -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#AFTER_03M">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Interval"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#AFTER_07D -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#AFTER_07D">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Interval"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#AFTER_24H -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#AFTER_24H">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Interval"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BASELINE -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BASELINE">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Interval"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestGaze -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestGaze">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestGaze_FORCED_DEVIATION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestGaze_FORCED_DEVIATION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#BestGaze"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestGaze_NORMAL -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestGaze_NORMAL">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#BestGaze"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestGaze_PARCIAL_GAZE_PALSY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestGaze_PARCIAL_GAZE_PALSY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#BestGaze"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestLanguage -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestLanguage_GLOBAL_APHASIA -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage_GLOBAL_APHASIA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestLanguage_MILD_TO_MODERATE_APHASIA -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage_MILD_TO_MODERATE_APHASIA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestLanguage_NO_APHASIA -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage_NO_APHASIA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#BestLanguage_SEVERE_APHASIA -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage_SEVERE_APHASIA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Commands -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Commands">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Commands_Both -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Commands_Both">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Commands"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Commands_NEITHER -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Commands_NEITHER">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Commands"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Commands_ONE -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Commands_ONE">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Commands"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Consciousness -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Consciousness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Consciousness_ALERT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Consciousness_ALERT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Consciousness"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Consciousness_NOT_ALERT_MINOR_BY_MINOR_STIMULATION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Consciousness_NOT_ALERT_MINOR_BY_MINOR_STIMULATION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Consciousness"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Consciousness_NOT_ALERT_REQUIRES_REPEATED_STIMULATION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Consciousness_NOT_ALERT_REQUIRES_REPEATED_STIMULATION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Consciousness"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Consciousness_UNRESPONSIVE -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Consciousness_UNRESPONSIVE">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Consciousness"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Dysarthria -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Dysarthria_INTUBATED -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria_INTUBATED">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Dysarthria_MILD_TO_MODERATE -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria_MILD_TO_MODERATE">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Dysarthria_NORMAL -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria_NORMAL">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Dysarthria_SEVERE -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria_SEVERE">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention_HEMI_INATTENATION_OR_EXTINCTION_TO_MORE_THAN_ONE_MODALITY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention_HEMI_INATTENATION_OR_EXTINCTION_TO_MORE_THAN_ONE_MODALITY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention_INATTENTION_OR_EXTINCTION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention_INATTENTION_OR_EXTINCTION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention_NO_EXTINCTION_AND_INATTENTION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention_NO_EXTINCTION_AND_INATTENTION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy_COMPLETE_PARALYSIS -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy_COMPLETE_PARALYSIS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy_MINOR_PARALYSIS -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy_MINOR_PARALYSIS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy_NORMAL_SYMMETRICAL_MOVEMENTS -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy_NORMAL_SYMMETRICAL_MOVEMENTS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy_PARTIAL_PARALYSIS -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy_PARTIAL_PARALYSIS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Instruction -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Instruction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Interval -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Interval">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia_ABSENT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia_ABSENT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia_AMPUTATION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia_AMPUTATION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia_PRESENT_IN_ONE_LIMB -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia_PRESENT_IN_ONE_LIMB">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia_PRESENT_IN_TWO_LIMBS -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia_PRESENT_IN_TWO_LIMBS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_AMPUTATION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_AMPUTATION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_DRIFT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_DRIFT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_NO_DRIFT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_NO_DRIFT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_NO_EFFORT_AGAINST_GRAVITY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_NO_EFFORT_AGAINST_GRAVITY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_NO_MOVEMENT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_NO_MOVEMENT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_SOME_EFFORT_AGAINST_GRAVITY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft_SOME_EFFORT_AGAINST_GRAVITY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_AMPUTATION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_AMPUTATION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_DRIFT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_DRIFT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_NO_DRIFT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_NO_DRIFT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_NO_EFFORT_AGAINST_GRAVITY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_NO_EFFORT_AGAINST_GRAVITY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_NO_MOVEMENT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_NO_MOVEMENT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_SOME_EFFORT_AGAINST_GRAVITY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight_SOME_EFFORT_AGAINST_GRAVITY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_AMPUTATION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_AMPUTATION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_DRIFT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_DRIFT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_NO_DRIFT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_NO_DRIFT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_NO_EFFORT_AGAINST_GRAVITY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_NO_EFFORT_AGAINST_GRAVITY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_NO_MOVEMENT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_NO_MOVEMENT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_SOME_EFFORT_AGAINST_GRAVITY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft_SOME_EFFORT_AGAINST_GRAVITY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_AMPUTATION -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_AMPUTATION">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_DRIFT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_DRIFT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_NO_DRIFT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_NO_DRIFT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_NO_EFFORT_AGAINST_GRAVITY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_NO_EFFORT_AGAINST_GRAVITY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_NO_MOVEMENT -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_NO_MOVEMENT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_SOME_EFFORT_AGAINST_GRAVITY -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight_SOME_EFFORT_AGAINST_GRAVITY">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#OTHER -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#OTHER">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Interval"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Questions -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Questions">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Questions_ANSWERS_BOTH -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Questions_ANSWERS_BOTH">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Questions"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Questions_ANSWERS_NEITHER -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Questions_ANSWERS_NEITHER">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Questions"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Questions_ANSWERS_ONE -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Questions_ANSWERS_ONE">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Questions"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Sensory -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Sensory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Sensory_MILD_TO_MODERATE_SENSORY_LOSS -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Sensory_MILD_TO_MODERATE_SENSORY_LOSS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Sensory"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Sensory_NO_SENSORY_LOSS -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Sensory_NO_SENSORY_LOSS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Sensory"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Sensory_SEVERAL_TO_TOTAL_SENSORY_LOSS -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Sensory_SEVERAL_TO_TOTAL_SENSORY_LOSS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Sensory"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Visual -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Visual">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Visual_BILATERAL_HEMIANOPIA -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Visual_BILATERAL_HEMIANOPIA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Visual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Visual_COMPLETE_HEMIANOPIA -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Visual_COMPLETE_HEMIANOPIA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Visual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Visual_NO_VISUAL_LOSS -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Visual_NO_VISUAL_LOSS">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Visual"/>
+    </Thing>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/nihss.owl#Visual_PARTIAL_HEMIANOPIA -->
+
+
+    <Thing rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Visual_PARTIAL_HEMIANOPIA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+        <rdf:type rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#Visual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/MTHU000270 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/MTHU000270">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70182-1 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70182-1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70183-9 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70183-9">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70184-7 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70184-7">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70185-4 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70185-4">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70186-2 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70186-2">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70187-0 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70187-0">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70188-8 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70188-8">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70189-6 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70189-6">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70190-4 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70190-4">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70191-2 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70191-2">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70192-0 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70192-0">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70193-8 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70193-8">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70194-6 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70194-6">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70195-3 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70195-3">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70196-1 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70196-1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70967-5 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70967-5">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/LNC/70968-3 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/LNC/70968-3">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNOMEDCT/450743008 -->
+
+
+    <Thing rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/450743008">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestGaze"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#BestLanguage"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Commands"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Consciousness"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Dysarthria"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#ExtinctionAndInattention"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#FacialPalsy"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Instruction"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Interval"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#LimbAtaxia"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmLeft"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorArmRight"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegLeft"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#MotorLegRight"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Questions"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Sensory"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://mre.zcu.cz/ontology/nihss.owl#Visual"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#bestGaze"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#bestLanguage"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#commands"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#consciousness"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#dysarthria"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#extinctionAndInattention"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#facialPalsy"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#limbAtaxia"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#motorArmLeft"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#motorArmRight"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#motorLegLeft"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#motorLegRight"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#questions"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#sensory"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#timepoint"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#visual"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://mre.zcu.cz/ontology/nihss.owl#NIHStrokeScale"/>
+    </Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.3) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,1996 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:family="http://www.benchmark.org/family#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.benchmark.org/family#hasChild -->
+
+
+    <ObjectProperty rdf:about="http://www.benchmark.org/family#hasChild"/>
+    
+
+
+    <!-- http://www.benchmark.org/family#hasParent -->
+
+
+    <ObjectProperty rdf:about="http://www.benchmark.org/family#hasParent"/>
+    
+
+
+    <!-- http://www.benchmark.org/family#hasSibling -->
+
+
+    <ObjectProperty rdf:about="http://www.benchmark.org/family#hasSibling"/>
+    
+
+
+    <!-- http://www.benchmark.org/family#married -->
+
+
+    <ObjectProperty rdf:about="http://www.benchmark.org/family#married"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- definer_1 -->
+
+
+    <Class rdf:about="definer_1">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.benchmark.org/family#hasChild"/>
+                <someValuesFrom rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- definer_2 -->
+
+
+    <Class rdf:about="definer_2">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.benchmark.org/family#hasParent"/>
+                <someValuesFrom rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Brother -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Brother">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Female"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Child -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Child">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.benchmark.org/family#hasParent"/>
+                <someValuesFrom rdf:resource="http://www.benchmark.org/family#Parent"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Daughter -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Daughter">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Female"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Father"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Male"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Son"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Father -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Father">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Female"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Female -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Female">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Person"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Male"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Son"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Grandchild -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Grandchild">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.benchmark.org/family#hasParent"/>
+                <someValuesFrom rdf:resource="definer_2"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Granddaughter -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Granddaughter">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Male"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Son"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Grandfather -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Grandfather">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Male"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Grandmother -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Grandmother">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Male"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Son"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Grandparent -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Grandparent">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.benchmark.org/family#hasChild"/>
+                <someValuesFrom rdf:resource="definer_1"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Grandson -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Grandson">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Son"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Male -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Male">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Person"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Mother -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Mother">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Son"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Parent -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Parent">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.benchmark.org/family#hasChild"/>
+                <someValuesFrom rdf:resource="http://www.benchmark.org/family#Child"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Person -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#PersonWithASibling -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#PersonWithASibling">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Person"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Sister -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Sister">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <disjointWith rdf:resource="http://www.benchmark.org/family#Son"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.benchmark.org/family#Son -->
+
+
+    <Class rdf:about="http://www.benchmark.org/family#Son">
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Male"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Nothing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    <Annotation>
+        <annotatedSource>
+            <Axiom rdf:nodeID="genid8">
+                <annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+                <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+                <annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <rdfs:comment>DisjointClasses(owl:Nothing) replaced by DisjointClasses(owl:Nothing owl:Thing)</rdfs:comment>
+            </Axiom>
+        </annotatedSource>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <annotatedTarget>DisjointClasses(owl:Nothing) replaced by DisjointClasses(owl:Nothing owl:Thing)</annotatedTarget>
+        <rdfs:comment>Generated by the OWL API (version 5.1.3) https://github.com/owlcs/owlapi/ on 4/29/25 11:53 PM</rdfs:comment>
+    </Annotation>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    <Annotation>
+        <annotatedSource>
+            <Axiom rdf:nodeID="genid10">
+                <annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+                <annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+                <annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <rdfs:comment>DisjointClasses(owl:Nothing) replaced by DisjointClasses(owl:Nothing owl:Thing)</rdfs:comment>
+            </Axiom>
+        </annotatedSource>
+        <annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <annotatedTarget>DisjointClasses(owl:Nothing) replaced by DisjointClasses(owl:Nothing owl:Thing)</annotatedTarget>
+        <rdfs:comment>Generated by the OWL API (version 5.1.3) https://github.com/owlcs/owlapi/ on 4/29/25 11:53 PM</rdfs:comment>
+    </Annotation>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.benchmark.org/family#F1F2 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F1F2">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F1F3"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F1M1"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F1F3 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F1F3">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F1F5"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F1F7"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F1F2"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F1M1"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F1M4"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F1F5 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F1F5">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F1F3"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F1M4"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F1F7"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F1M6"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F1F7 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F1F7">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F1F3"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F1M4"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F1F5"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F1M8"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F1M1 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F1M1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F1F3"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F1F2"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F1M4 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F1M4">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F1F5"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F1F7"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F1F3"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F1M6 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F1M6">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F1F5"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F1M8 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F1M8">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F1F7"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F10 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F10">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F19"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F26"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F28"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F36"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M11"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M9"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F12 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F12">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F15"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M13"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M11"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F14 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F14">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M13"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F15 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F15">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F17"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M18"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F12"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M11"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2M13"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M16"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F17 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F17">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F15"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M16"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2M18"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F19 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F19">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M21"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F10"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M9"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F26"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F28"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F36"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2M11"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M20"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F22 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F22">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M23"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M21"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F24 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F24">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M25"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M23"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F26 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F26">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F10"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M9"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F19"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F28"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F36"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2M11"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M27"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F28 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F28">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F30"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F10"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M9"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F19"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F26"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F36"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2M11"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M29"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F30 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F30">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F33"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M32"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F28"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M29"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M31"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F33 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F33">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M35"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F30"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M31"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2M32"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M34"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F36 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F36">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F38"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F10"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M9"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F19"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F26"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F28"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2M11"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M37"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2F38 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2F38">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F36"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M37"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2M39"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M11 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M11">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Brother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F15"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M13"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F10"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M9"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F19"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F26"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F28"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F36"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F12"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M13 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M13">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Brother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F12"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M11"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F15"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F14"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M16 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M16">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F17"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M18"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F15"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M18 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M18">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Brother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F15"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M16"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F17"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M20 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M20">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M21"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F19"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M21 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M21">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M23"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F19"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M20"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F22"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M23 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M23">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M25"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F22"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M21"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F24"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M25 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M25">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F24"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M23"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M27 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M27">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F26"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M29 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M29">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F30"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F28"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M31 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M31">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F33"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M32"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F30"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M32 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M32">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Brother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F30"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M31"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F2F33"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M34 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M34">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M35"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F33"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M35 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M35">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2F33"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F2M34"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M37 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M37">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F38"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F36"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M39 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M39">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F38"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F2M9 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F2M9">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F19"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F26"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F28"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2F36"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F2M11"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F2F10"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3F41 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3F41">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3F42"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3M40"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3F42 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3F42">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3F53"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3M44"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3M45"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3F41"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3M40"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3M43"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3F46 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3F46">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3M47"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3M45"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3F48 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3F48">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3F49"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3F52"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3M47"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3F49 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3F49">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Mother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3M51"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3F48"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3M47"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F3F52"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3M50"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3F52 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3F52">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3F48"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3M47"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F3F49"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3F53 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3F53">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Daughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Female"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Sister"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3F42"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3M43"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F3M44"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F3M45"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3M40 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3M40">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3F42"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3F41"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3M43 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3M43">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3F53"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3M44"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3M45"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3F42"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3M44 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3M44">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Brother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3F42"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3M43"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F3F53"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F3M45"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3M45 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3M45">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Brother"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3M47"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3F42"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3M43"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F3F53"/>
+        <family:hasSibling rdf:resource="http://www.benchmark.org/family#F3M44"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3F46"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3M47 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3M47">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="definer_2"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3F49"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3F52"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3F46"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3M45"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3F48"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3M50 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3M50">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="definer_1"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Father"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <family:hasChild rdf:resource="http://www.benchmark.org/family#F3M51"/>
+        <family:married rdf:resource="http://www.benchmark.org/family#F3F49"/>
+    </Thing>
+    
+
+
+    <!-- http://www.benchmark.org/family#F3M51 -->
+
+
+    <Thing rdf:about="http://www.benchmark.org/family#F3M51">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Grandson"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Male"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Person"/>
+        <rdf:type rdf:resource="http://www.benchmark.org/family#Son"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3F49"/>
+        <family:hasParent rdf:resource="http://www.benchmark.org/family#F3M50"/>
+    </Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Brother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Daughter"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Brother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Brother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Granddaughter"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Brother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandmother"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Brother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Mother"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Brother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Sister"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Brother"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Child"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Daughter"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Child"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Son"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Child"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Daughter"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Father"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Daughter"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandfather"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Daughter"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandson"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Daughter"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Daughter"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Son"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Daughter"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Father"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Father"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Granddaughter"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Father"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandmother"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Father"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Mother"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Father"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Sister"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Father"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandchild"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Granddaughter"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandfather"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandparent"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Grandmother"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandson"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Parent"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Mother"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#PersonWithASibling"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Sister"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Son"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Female"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandchild"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Grandson"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandchild"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Granddaughter"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandfather"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Granddaughter"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandson"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Granddaughter"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Granddaughter"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Son"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Granddaughter"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandfather"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandmother"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandfather"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Mother"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandfather"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Sister"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandfather"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandmother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandson"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandmother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandmother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Son"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandmother"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandparent"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Grandfather"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandparent"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandson"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Mother"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandson"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Sister"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Grandson"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Mother"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Parent"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Father"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#PersonWithASibling"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Brother"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Sister"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Male"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Mother"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Son"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Mother"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Parent"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Person"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#PersonWithASibling"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Sister"/>
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Son"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Sister"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.benchmark.org/family#Son"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Class>
+        <intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+        </intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </Class>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#hasChild"/>
+        <someValuesFrom rdf:resource="definer_1"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#hasChild"/>
+        <someValuesFrom rdf:resource="http://www.benchmark.org/family#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Parent"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#hasChild"/>
+        <someValuesFrom rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+        <rdfs:subClassOf rdf:resource="definer_1"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#hasChild"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Parent"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#hasParent"/>
+        <someValuesFrom rdf:resource="definer_2"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Grandchild"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#hasParent"/>
+        <someValuesFrom rdf:resource="http://www.benchmark.org/family#Grandparent"/>
+        <rdfs:subClassOf rdf:resource="definer_2"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#hasParent"/>
+        <someValuesFrom rdf:resource="http://www.benchmark.org/family#Parent"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Child"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#hasParent"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Child"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#hasSibling"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#PersonWithASibling"/>
+    </Restriction>
+    <Restriction>
+        <onProperty rdf:resource="http://www.benchmark.org/family#married"/>
+        <someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://www.benchmark.org/family#Person"/>
+    </Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.3) https://github.com/owlcs/owlapi/ -->
+
+
