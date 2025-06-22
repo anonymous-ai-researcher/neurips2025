@@ -154,16 +154,16 @@ class DFALC(nn.Module):
             loss = torch.mean(self.L1((1-righte)*self.relu(lefte-righte)))
 
         elif atype == 3:
-            loss = torch.mean(self.L1((1-lefte)*self.relu(0.8-lefte)*self.relu(torch.sum(torch.minimum(righte.unsqueeze(-1),self.rEmb[right[:,0]]),dim=1)-0.8)))
-
+            loss = torch.mean(self.L1((1-lefte)*self.relu(0.8-lefte)*self.relu(torch.sum(torch.minimum(righte.unsqueeze(-1).repeat(1, 1, size),self.rEmb[right[:,0]]),dim=1)-0.8)))
+            
         elif atype == 4:                
-            loss = torch.mean(self.L1((1-lefte)*self.relu(0.8-lefte)*self.relu(torch.sum(torch.minimum(righte.unsqueeze(-1),self.rEmb[right[:,0]]),dim=1)-0.8)))
+            loss = torch.mean(self.L1((1-lefte)*self.relu(0.8-lefte)*self.relu(torch.sum(torch.minimum(righte.unsqueeze(-1).repeat(1, 1, size),self.rEmb[right[:,0]]),dim=1)-0.8)))
                 
         elif atype == 5:              
-            loss = torch.mean(self.L1((1-righte)*self.relu(0.8-righte)*self.relu(torch.sum(torch.minimum(lefte.unsqueeze(-1),self.rEmb[left[:,0]]),dim=2)-0.8)))
-
+            loss = torch.mean(self.L1((1-righte)*self.relu(0.8-righte)*self.relu(torch.sum(torch.minimum(lefte.unsqueeze(-2).repeat(1,size,1),self.rEmb[left[:,0]]),dim=2)-0.8)))
+            
         elif atype == 6:
-            loss = torch.mean(self.L1((1-righte)*self.relu(0.8-righte)*self.relu(torch.sum(torch.minimum(lefte.unsqueeze(-1),self.rEmb[left[:,0]]),dim=2)-0.8) + (1-lefte)*self.relu(0.8-lefte)*self.relu(torch.sum(torch.minimum(righte.unsqueeze(-1),self.rEmb[left[:,0]]),dim=1)-0.8)))
+            loss = torch.mean(self.L1((1-righte)*self.relu(0.8-righte)*self.relu(torch.sum(torch.minimum(lefte.unsqueeze(-2).repeat(1,size,1),self.rEmb[left[:,0]]),dim=2)-0.8) + (1-lefte)*self.relu(0.8-lefte)*self.relu(torch.sum(torch.minimum(righte.unsqueeze(-1).repeat(1, 1, size),self.rEmb[left[:,0]]),dim=1)-0.8)))
 
 
         return loss
